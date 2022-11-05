@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6em;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: inline;
+}
+
+#main-doc{
+    float: right;
+    width: 70%;
+    padding: 50px;
+    padding-top: 0;
+    background-color: #d8d8d8;
+}
+
+#main-doc section{
+    padding: 60px;
+    padding-top: 100px;
+    margin-left: 15px;
+    border-bottom: 5px solid white;
+}
+
+#main-doc section:hover{
+    background-color: #c5c5c5;
+}
+
+#main-doc header{
+    font-size: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main-doc p{
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#main-doc li{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+
+code{
+    background-color: rgb(203, 181, 155);
+    width: 100%;
+    padding: 10px 100px 10px 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+code:hover{
+    background-color: rgb(160, 135, 106);
+    color: white;
+}
+#navbar{
+    float: left;
+    width: 25%;
+    padding: 15px;
+    padding-top: 100px;
+    background-color: rgb(160, 135, 106);
+    height: 100%;
+    position: fixed;
+}
+
+#navbar ul li{
+    margin-left: 30px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+#navbar a{
+    position: relative;
+    top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:nth-child(1){
+    border-bottom: none;
+}
+
+#topic{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#topic:hover{
+    transform: scale(1.1);
+}
+
+#navbar a:nth-child(6){
+    border-bottom: none;
+}
+
+#navbar a:hover{
+    margin-left: 30px;
+    color: rgb(255, 187, 0);
+}
+
+@media (max-width: 900px){
+
+    .container{
+        display: block;
+        width: 100%;
+    }
+
+    #main-doc{
+        float: none;
+        width: 80%;
+        margin-top: 450px;
+        margin: auto;
+        position: relative;
+        top: 360px;
+    }
+
+    #navbar{
+        float: none;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        height: 420px;
+    }
+
+    #topic{
+        padding-top: 30px;
+    }
+
+    #navbar li{
+        text-align: center;
+        border: none;
+    }
+
+    #main-doc section:hover{
+        background-color: #d8d8d8;
+    }
+
+    
+}
